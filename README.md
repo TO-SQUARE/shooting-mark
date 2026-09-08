@@ -1,4 +1,4 @@
-# Shooting Mark
+# Shooting Mark v1.0.0
 
 A lightweight Windows utility for displaying a customizable crosshair over your screen or a selected window.
 Follow the development of the program, as source code for Linux systems may be released in the near future.
@@ -66,7 +66,7 @@ python -m pip install pyinstaller
 Then build the executable:
 
 ```powershell
-python -m PyInstaller --onefile --noconsole --windowed --name "SHOOTING MARK" --icon "shooting-mark.png" --add-data "data;data" --add-data "shooting-mark.png;." main.py
+python -m PyInstaller --onefile --noconsole --windowed --name "SHOOTING-MARK_v1.0.0" --icon "shooting-mark.png" --add-data "data;data" --add-data "shooting-mark.png;." "main.py"
 ```
 
 The executable will be created in the `dist` folder.

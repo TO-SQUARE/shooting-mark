@@ -242,7 +242,7 @@ class ControlPanel(QMainWindow):
         self._load_initial_state()
 
     def _build_ui(self) -> None:
-        self.setWindowTitle("Shooting Mark")
+        self.setWindowTitle("Shooting Mark v1.0.0")
         self.setMinimumSize(520, 680)
         self.setWindowIcon(QIcon(str(ASSET_DIR / "shooting-mark.png")))
 
@@ -254,11 +254,11 @@ class ControlPanel(QMainWindow):
         layout.setSpacing(16)
 
         header = QHBoxLayout()
-        title = QLabel("Shooting Mark")
+        title = QLabel("Shooting Mark v1.0.0")
         title.setObjectName("title")
         self.about_button = QPushButton("About")
         self.about_button.setObjectName("about")
-        self.about_button.setToolTip("About Shooting Mark")
+        self.about_button.setToolTip("About Shooting Mark v1.0.0")
         header.addWidget(title)
         header.addStretch()
         header.addWidget(self.about_button)
@@ -391,8 +391,8 @@ class ControlPanel(QMainWindow):
     def _show_about(self) -> None:
         QMessageBox.about(
             self,
-            "About Shooting Mark",
-            "<h2>Shooting Mark</h2>"
+            "About Shooting Mark v1.0.0",
+            "<h2>Shooting Mark v1.0.0</h2>"
             "<p>It is a simple tool that displays a customizable crosshair "
             "over the screen or a selected window.</p>"
             "<p>It offers multiple designs, adjustable size and opacity, "
@@ -517,7 +517,7 @@ class ControlPanel(QMainWindow):
 
 def main() -> int:
     app = QApplication(sys.argv)
-    app.setApplicationName("Shooting Mark")
+    app.setApplicationName("Shooting Mark v1.0.0")
     app.setWindowIcon(QIcon(str(ASSET_DIR / "shooting-mark.png")))
     window = ControlPanel(app)
     window.show()
